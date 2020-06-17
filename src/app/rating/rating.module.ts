@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RatingPage } from './rating.page';
+import { RatingService } from './rating.service';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { RatingPageRoutingModule } from './rating-routing.module';
@@ -16,6 +17,7 @@ import { RatingPageRoutingModule } from './rating-routing.module';
     ExploreContainerComponentModule,
     RatingPageRoutingModule
   ],
-  declarations: [RatingPage]
+  declarations: [RatingPage],
+  providers: [RatingService]
 })
 export class RatingPageModule {}

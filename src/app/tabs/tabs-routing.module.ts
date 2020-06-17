@@ -12,7 +12,7 @@ const routes: Routes = [
         loadChildren: () => import('../news/news.module').then(m => m.NewsPageModule)
       },
       {
-        path: 'tab2',
+        path: 'rating',
         loadChildren: () => import('../rating/rating.module').then(m => m.RatingPageModule)
       },
       {

@@ -25,7 +25,7 @@
   </ion-item> 
 
   <!-- Table content -->
-  <ion-item *ngFor="let rating of ratings"> 
+  <ion-item *ngFor="let rating of ratings$ | async"> 
     <ion-col col>
       <ion-label>{{ rating.rateorder }}</ion-label>
     </ion-col>
@@ -36,5 +36,21 @@
       <ion-label>{{ rating.famname }}</ion-label>
     </ion-col>
   </ion-item> 
+<!-- 
+  <ion-item> 
+
+<div style="text-align:center">
+  <h2>
+    Fetch data from some API
+  </h2>
+</div>
+
+<button (click)="fetchRating()">Fetch rating</button>
+<hr>
+
+<ul>
+  <li *ngFor="let rating of ratings$ | async"> {{ rating.firstname }} </li>
+</ul>
+</ion-item> -->
 
 </ion-content> 
